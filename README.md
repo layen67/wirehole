@@ -4,7 +4,7 @@ WireHole is a combination of WireGuard, PiHole, and Unbound in a docker-compose 
 ## Prerequisites:
 
 - ☁ If using a cloud provider:
-    - You need to allow ingress to port `51820`
+    - You need to allow ingress to port `51920`
 
 ##### Optional Fully Automated Deployment on Oracle Cloud:
   - https://medium.com/@devinjaystokes/automating-the-deployment-of-your-forever-free-pihole-and-wireguard-server-dce581f71b7
@@ -44,7 +44,7 @@ sudo add-apt-repository \
     sudo apt-get install docker-ce docker-ce-cli containerd.io -yqq
 
 # docker-compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose &&
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose &&
     sudo chmod +x /usr/local/bin/docker-compose &&
     sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
