@@ -28,4 +28,4 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 # wirehole
 git clone https://github.com/layen67/wirehole.git &&
     cd wirehole &&
-    docker-compose up<qa&
+    docker-compose up
