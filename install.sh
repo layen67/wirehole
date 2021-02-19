@@ -28,4 +28,10 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 # wirehole
 git clone https://github.com/layen67/wirehole.git &&
     cd wirehole &&
-    docker-compose up
+    docker-compose up -d
+    
+sleep 10
+apt update
+apt install wireguard
+apt install openresolv
+cd /etc/wireguard
