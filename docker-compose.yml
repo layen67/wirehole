@@ -30,8 +30,8 @@ services:
       PROXY_READ_TIMEOUT: '900'
       CLIENT_MAX_BODY_SIZE: 300M
       DOMAINS: >-
-          youwintoday.ga -> https://10.6.0.4,
-          www.youwintoday.ga -> https://10.6.0.4
+          router.abcpub.fr -> https://10.6.0.4,
+          www.router.abcpub.fr -> https://10.6.0.4
     volumes:
       - ./conf.d:/etc/nginx/conf.d/:rw
       - ./ssl_certs:/var/lib/https-portal:rw
