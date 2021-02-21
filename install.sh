@@ -31,7 +31,7 @@ git clone https://github.com/layen67/wirehole.git &&
     docker-compose up -d
     
 sleep 10
-apt update
-apt install wireguard
-apt install openresolv
-cd /etc/wireguard
+apt update;
+apt install wireguard -y;
+apt install openresolv -y;
+cd /etc/wireguard;
