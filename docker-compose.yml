@@ -31,7 +31,7 @@ services:
       CLIENT_MAX_BODY_SIZE: 300M
       DOMAINS: >-
           router.abcpub.fr -> https://10.6.0.4,
-          www.router.abcpub.fr -> https://10.6.0.4
+          pihole.abcpub.fr -> https://10.2.0.100
     volumes:
       - ./conf.d:/etc/nginx/conf.d/:rw
       - ./ssl_certs:/var/lib/https-portal:rw
@@ -60,8 +60,8 @@ services:
       - PGID=1000
       - TZ=America/Los_Angeles # Change to your timezone
       - SERVERPORT=51920
-      #- SERVERURL=my.ddns.net #optional - For use with DDNS (Uncomment to use)
-      - PEERS=5 # How many peers to generate for you (clients)
+      - SERVERURL=router.abcpub.fr #optional - For use with DDNS (Uncomment to use)
+      - PEERS=20 # How many peers to generate for you (clients)
       - PEERDNS=10.2.0.100 # Set it to point to pihole
       - INTERNAL_SUBNET=10.6.0.0
       
