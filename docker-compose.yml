@@ -30,8 +30,8 @@ services:
       PROXY_READ_TIMEOUT: '900'
       CLIENT_MAX_BODY_SIZE: 300M
       DOMAINS: >-
-          router.abcpub.fr -> https://10.6.0.4,
-          pihole.abcpub.fr -> https://10.2.0.100
+          router.abilis.fr -> https://10.6.0.4,
+          pihole.abilis.fr -> https://10.2.0.100
     volumes:
       - ./conf.d:/etc/nginx/conf.d/:rw
       - ./ssl_certs:/var/lib/https-portal:rw
